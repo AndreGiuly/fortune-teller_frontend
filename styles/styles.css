@@ -1,0 +1,402 @@
+body {
+	overflow: hidden;
+}
+#bg {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  width: 100%;
+  min-height: 100%;
+}
+
+#bg-sm{
+	display: none;
+}
+
+.card-content {
+    position: relative;
+    height: 350px;
+    display: flex;
+    max-width: 500px;
+    margin: 10% auto;
+    background: url(../images/card.jpg) white center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 5px grey;
+
+}
+
+.card-container {
+
+	text-align: center;
+	margin: 0 auto;
+	width: 80%;
+	height: 120%;
+}
+
+#volver {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.card-container h1 {
+	font-size: 25px;
+	margin-top: 50px;
+}
+
+.inline {
+	display: inline;
+	border: 2px solid black;
+	border-radius: 2px;
+	max-width: 48%;
+	padding: 15px 5px;
+}
+
+.operator {
+	border: 2px solid black;
+}
+
+
+.error {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: red;
+}
+
+.error-desktop {
+display: none;
+}
+.error-mobile {
+display: none;
+}
+
+form {
+	margin: 10px 0px; 
+
+}
+
+form * {
+	width: 100%;
+}
+
+form input{
+	font-size: 16px;
+}
+
+/* Hide Arrows to input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.sq {
+	width: 5%;
+}
+.form-group{
+	    display: inline-flex;
+}
+
+#operator{
+	background: url('../images/1200x700_0002s_0002s_0001_Forma-1.png') no-repeat #fff 3px center;
+	padding-left: 40px;
+}
+
+#tlm {
+	background: url('../images/1200x700_0002s_0003s_0001_iphone.png') no-repeat #fff 3px center;
+	padding-left: 30px;
+	margin-right: 10px;
+}
+
+
+.termos {
+	font-size: 12px;
+}
+
+.termos a {
+	text-decoration: underline;
+	color: black;
+}
+
+.botao {
+	width: 50%;
+	padding: 8px 0px;
+	background-color: rgb(108,177,61);
+	color: white;
+	font-weight: bold;
+	font-size: 23px;
+	border: none;
+	border-radius: 5px;
+}
+
+input:focus {
+	box-shadow: 0px 0px 15px rgb(108,177,61);
+	border: 2px solid rgb(108,177,61);
+}
+
+.operator:focus {
+	box-shadow: 0px 0px 15px rgb(108,177,61);
+	border: 2px solid rgb(108,177,61);
+}
+.card2 input:focus{
+		box-shadow: 0px 0px 15px rgb(108,177,61);
+	border: 2px solid rgb(108,177,61);
+}
+
+
+.card-content.card1{
+	z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    left: 0%;
+    transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+}
+
+.card2{
+	-ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+
+    z-index: 1;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.card2 .mobile-disabled{
+	border: 2px solid grey;
+	color: grey;
+}
+
+.code {
+	font-size: 24px;
+}
+
+.card2 .inline {
+    display: inline;
+    border: 2px solid black;
+    border-radius: 0px;
+    max-width: 48%;
+    padding: 10px 5px;
+    border-radius: 2px;
+}
+.card2 p {
+	font-weight: 700;
+}
+.success-board {
+	background: #7f0314;
+	position: absolute;
+	z-index: 4;
+	max-width: 50%;
+	right: 25%;
+	padding: 25px;
+	top: 20%;
+	border: 5px solid whitesmoke;
+	border-radius: 3px;
+	box-shadow: 0px 0px 15px #7f0314;
+}
+.success-board img {
+	max-width: 60px;
+}
+
+.suertes {
+	color: white;
+}
+
+.success-board .text-scroll{
+    background: white;
+    height: 300px;
+    overflow-y: scroll;
+	box-shadow: inset -20px 0 0 0 #7f0314;
+	font-size: 12px;
+    font-weight: 700;
+}
+.success-board h1 {
+	font-size: 20px;
+	font-weight: 700;
+}
+.zoltar{
+	position: absolute;
+	top:0%;
+	min-width: 50%;
+	right: 0%;
+	left: 0;
+	margin: 0 auto;
+	
+}
+
+.success {
+	display: none;
+}
+.ts{
+	font-size: 1.6em;
+    font-weight: 300;
+}
+
+
+
+.num_suerte{
+	color: rgb(108,177,61);
+	font-weight: 700;
+}
+.dia_suerte{
+	color: rgb(24,200,211);
+	font-weight: 700;
+}
+.color_suerte{
+	color: rgb(234,82,82);
+	font-weight: 700;
+}
+
+.img1{
+    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+    animation-delay: 0s;
+}
+.img2{
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+}
+.img3{
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+}
+
+
+ 
+::-webkit-scrollbar {
+    width: 13px;
+    background: #7f0314;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+    background-clip: content-box;
+    border: 5px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(167,199,35);
+    -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,0.5); 
+    border-radius: 9px; 
+
+}
+
+@media (max-width:1000px) and (min-width:600px) {
+	.success-board {
+    background: #7f0314;
+    position: fixed;
+    z-index: 4;
+    min-width: 80%;
+    right: 0%;
+    padding: 25px;
+    top: 15%;
+    border: 5px solid whitesmoke;
+    border-radius: 3px;
+    left: 1%;
+    box-shadow: 0px 0px 5px #7f0314;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+   #bg-sm{
+	  position: absolute; 
+	  top: 0; 
+	  left: 0; 
+	bottom: 0;	
+	  /* Preserve aspet ratio */
+	  width: 100%;
+	  min-height: 130%;
+	  display: block;
+	}
+	#bg{
+		display: none;
+	}
+
+.ts{
+	font-size: 1em;
+}
+
+	.card-content {
+    position: absolute;
+    max-height: 42%;
+    display: flex;
+    width: 98%;
+    margin: 20% auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 5px grey;
+    right: 1%;
+
+	}
+	.card-container {
+
+		text-align: center;
+		margin: 0 auto;
+		width: 90%;
+		height: 120%;
+	}
+	.card-container h1 {
+	    font-size: 1.6rem;
+	    margin-top: 35px;
+	}
+	.inline {
+	    display: inline;
+	    border: 2px solid black;
+	    
+	    max-width: 48%;
+	    padding: 10px 5px;
+
+	}
+	.form-group {
+	    margin-bottom: 0px;
+	}
+	#operator {
+	    padding-left: 30px;
+	    border-radius: 2px;
+	}
+	.botao {
+    width: 56%;
+    }
+
+	.card2 .inline {
+	padding: 5px 5px;
+	}    
+	.card2 p {
+		width: 70%;
+		margin: 10px auto;
+	}
+	.botao{
+		font-size: 20px;
+	}
+	.success-board {
+    background: #7f0314;
+    position: fixed;
+    z-index: 4;
+    min-width: 98%;
+    right: 1%;
+    padding: 25px;
+    top: 7%;
+    border: 5px solid whitesmoke;
+    border-radius: 3px;
+    left: 1%;
+    box-shadow: 0px 0px 5px #7f0314;
+}
+	.error {
+		bottom: -15%;
+	    position: absolute;
+		right: 0%;
+    	left: 0%;
+    	font-size: 0.8em;
+	}
+}
